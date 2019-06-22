@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Navbar.css";
+import dp from "../../images/icons/dp.png";
 
 export class Navbar extends Component {
   render() {
@@ -15,9 +16,13 @@ export class Navbar extends Component {
     return (
       <div>
         <nav>
-          <span className="logo">
-            <a href="#home">Day Park</a>
-          </span>
+          <div className="dp-title">
+            <a href="#home">
+              {" "}
+              <img className="dp-logo" src={dp} alt="dp" />
+            </a>
+            <span className="title-text">Day Park</span>
+          </div>
           <ul>{navLinks}</ul>
         </nav>
       </div>
